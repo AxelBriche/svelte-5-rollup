@@ -1,0 +1,30 @@
+<script>
+    let count = $state(0);
+
+    function increment() {
+        count += 1;
+    }
+</script>
+
+<button onclick={increment}>
+    Clicks: {count}
+</button>
+
+<style>
+    button {
+        font-family: inherit;
+        font-size: inherit;
+        padding: 1em 2em;
+        color: #ff3e00;
+        background-color: rgba(255, 62, 0, 0.1);
+        border-radius: 2em;
+        border: 2px solid rgba(255, 62, 0, 0);
+        outline: none;
+        width: 200px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        border: 2px solid #ff3e00;
+    }
+</style>
